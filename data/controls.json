@@ -1,0 +1,26 @@
+{
+  "controls": [
+    {
+      "key": "Arrow Keys",
+      "description": "Use arrow keys to hit notes in rhythm with the music",
+      "tip": "Timing is everything - hit the notes when they reach the target zone"
+    },
+    {
+      "key": "WASD",
+      "description": "Alternative control scheme using WASD keys for note input",
+      "tip": "Choose the control scheme that feels most comfortable for you"
+    },
+    {
+      "key": "Spacebar",
+      "description": "Pause/resume the game during gameplay",
+      "tip": "Use this to take a break or adjust your position"
+    }
+  ],
+  "tips": [
+    "Listen to the beat - the music will guide your timing",
+    "Practice makes perfect - start with easier songs",
+    "Watch the opponent's health bar to track your progress",
+    "Build up your combo streak for higher scores",
+    "Don't panic if you miss a note - focus on the next one"
+  ]
+}

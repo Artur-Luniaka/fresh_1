@@ -1,0 +1,34 @@
+{
+  "contact_info": {
+    "email": "groove@QuantumPlayArena.com",
+    "phone": "+61 3 9138 6700",
+    "address": "23 Banksia Street, Mornington VIC 3931, Australia",
+    "social_media": {
+      "twitter": "@QuantumPlayArena",
+      "instagram": "@quantumplayarena",
+      "discord": "Funk Community"
+    },
+    "business_hours": "Monday - Friday: 9:00 AM - 6:00 PM AEST",
+    "response_time": "We typically respond within 24 hours"
+  },
+  "locations": [
+    {
+      "city": "Mornington",
+      "address": "23 Banksia Street, VIC 3931, Australia",
+      "timezone": "AEST",
+      "description": "Main headquarters and development studio"
+    },
+    {
+      "city": "Melbourne",
+      "address": "45 Collins Street, VIC 3000, Australia",
+      "timezone": "AEST",
+      "description": "West Coast operations and community events"
+    },
+    {
+      "city": "Sydney",
+      "address": "78 George Street, NSW 2000, Australia",
+      "timezone": "AEST",
+      "description": "Asian market expansion and partnerships"
+    }
+  ]
+}

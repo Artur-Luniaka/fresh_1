@@ -1,0 +1,48 @@
+{
+  "patches": [
+    {
+      "version": "2.2.0",
+      "date": "June 15, 2025",
+      "title": "Summer Funk Update",
+      "changes": [
+        "Added 8 new summer-themed songs",
+        "Enhanced rhythm detection algorithms",
+        "New beach stage environment",
+        "Improved mobile touch controls",
+        "Added seasonal character skins"
+      ],
+      "type": "major",
+      "overlay": {
+        "highlights": [
+          "8 new summer songs",
+          "Enhanced rhythm detection",
+          "Beach stage environment",
+          "Improved mobile controls",
+          "Seasonal character skins"
+        ]
+      }
+    },
+    {
+      "version": "2.1.5",
+      "date": "May 28, 2025",
+      "title": "Performance Optimization",
+      "changes": [
+        "Reduced loading times by 40%",
+        "Fixed memory leak in multiplayer",
+        "Improved frame rate stability",
+        "Enhanced audio processing",
+        "Bug fixes and stability improvements"
+      ],
+      "type": "patch",
+      "overlay": {
+        "highlights": [
+          "40% faster loading",
+          "Fixed multiplayer memory leak",
+          "Improved frame rate",
+          "Enhanced audio processing",
+          "Bug fixes"
+        ]
+      }
+    }
+  ]
+}

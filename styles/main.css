@@ -1,0 +1,249 @@
+/* CSS Variables - Musical & Street Culture Theme */
+:root {
+  --funk-pink: #ff69b4;
+  --neon-blue: #00ffff;
+  --groove-vibe: #8a2be2;
+  --street-graffiti: #ff4500;
+  --beat-black: #1a1a1a;
+  --rhythm-white: #ffffff;
+  --flow-gray: #808080;
+  --bass-dark: #000000;
+  --combo-gold: #ffd700;
+  --sync-green: #32cd32;
+
+  /* Typography */
+  --font-primary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-secondary: "Courier New", monospace;
+
+  /* Spacing */
+  --groove-spacing-xs: 0.5rem;
+  --groove-spacing-sm: 1rem;
+  --groove-spacing-md: 1.5rem;
+  --groove-spacing-lg: 2rem;
+  --groove-spacing-xl: 3rem;
+
+  /* Shadows */
+  --neon-shadow: 0 0 20px var(--neon-blue);
+  --funk-shadow: 0 0 15px var(--funk-pink);
+  --groove-shadow: 0 0 25px var(--groove-vibe);
+
+  /* Transparent Colors */
+  --transparent-black-50: rgba(0, 0, 0, 0.5);
+  --transparent-black-70: rgba(0, 0, 0, 0.7);
+  --transparent-black-80: rgba(0, 0, 0, 0.8);
+  --transparent-black-85: rgba(0, 0, 0, 0.85);
+  --transparent-black-90: rgba(0, 0, 0, 0.9);
+  --transparent-black-95: rgba(0, 0, 0, 0.95);
+  --transparent-black-98: rgba(0, 0, 0, 0.98);
+
+  --transparent-white-05: rgba(255, 255, 255, 0.05);
+  --transparent-white-08: rgba(255, 255, 255, 0.08);
+  --transparent-white-10: rgba(255, 255, 255, 0.1);
+  --transparent-white-15: rgba(255, 255, 255, 0.15);
+  --transparent-white-20: rgba(255, 255, 255, 0.2);
+
+  --transparent-blue-10: rgba(0, 123, 255, 0.1);
+  --transparent-blue-15: rgba(0, 123, 255, 0.15);
+  --transparent-blue-20: rgba(0, 123, 255, 0.2);
+  --transparent-blue-30: rgba(0, 123, 255, 0.3);
+  --transparent-blue-40: rgba(0, 123, 255, 0.4);
+
+  --transparent-cyan-05: rgba(0, 150, 255, 0.05);
+  --transparent-cyan-10: rgba(0, 150, 255, 0.1);
+  --transparent-cyan-20: rgba(0, 150, 255, 0.2);
+
+  --transparent-pink-10: rgba(255, 20, 147, 0.1);
+  --transparent-pink-15: rgba(255, 20, 147, 0.15);
+  --transparent-pink-30: rgba(255, 20, 147, 0.3);
+
+  --transparent-dark-26-90: rgba(26, 26, 26, 0.9);
+  --transparent-dark-26-98: rgba(26, 26, 26, 0.98);
+
+  /* Shadow Colors */
+  --shadow-black-30: rgba(0, 0, 0, 0.3);
+  --shadow-black-40: rgba(0, 0, 0, 0.4);
+  --shadow-black-50: rgba(0, 0, 0, 0.5);
+  --shadow-black-80: rgba(0, 0, 0, 0.8);
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
+  color: var(--rhythm-white);
+  background: linear-gradient(
+    135deg,
+    var(--beat-black) 0%,
+    var(--bass-dark) 100%
+  );
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--groove-spacing-sm);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+p {
+  margin-bottom: var(--groove-spacing-sm);
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+}
+
+/* Links */
+a {
+  color: var(--neon-blue);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--funk-pink);
+  text-shadow: 0 0 10px var(--funk-pink);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Container */
+.groove-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--groove-spacing-sm);
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  color: var(--neon-blue);
+  text-shadow: var(--neon-shadow);
+  margin-bottom: var(--groove-spacing-xl);
+  font-family: var(--font-secondary);
+  letter-spacing: 2px;
+}
+
+.page-title {
+  text-align: center;
+  color: var(--funk-pink);
+  text-shadow: var(--funk-shadow);
+  margin-bottom: var(--groove-spacing-md);
+  font-family: var(--font-secondary);
+  letter-spacing: 3px;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: var(--flow-gray);
+  font-size: 1.2rem;
+  margin-bottom: var(--groove-spacing-xl);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 360px) {
+  .groove-container {
+    padding: 0 var(--groove-spacing-xs);
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .groove-container {
+    padding: 0 var(--groove-spacing-md);
+  }
+
+  .section-title {
+    margin-bottom: var(--groove-spacing-xl);
+  }
+}
+
+@media (min-width: 1280px) {
+  .groove-container {
+    padding: 0 var(--groove-spacing-lg);
+  }
+
+  .section-title {
+    margin-bottom: calc(var(--groove-spacing-xl) * 1.5);
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-sm {
+  margin-bottom: var(--groove-spacing-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--groove-spacing-md);
+}
+
+.mb-lg {
+  margin-bottom: var(--groove-spacing-lg);
+}
+
+.mb-xl {
+  margin-bottom: var(--groove-spacing-xl);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

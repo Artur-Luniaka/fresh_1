@@ -1,0 +1,84 @@
+{
+  "unlockables": [
+    {
+      "category": "Character Skins",
+      "items": [
+        {
+          "name": "Neon Boyfriend",
+          "requirement": "Complete 25 songs on Hard mode",
+          "description": "Glowing neon version of the main character with special effects"
+        },
+        {
+          "name": "Street Girlfriend",
+          "requirement": "Achieve 10 perfect combos in a row",
+          "description": "Urban street style outfit with graffiti elements"
+        },
+        {
+          "name": "Golden Opponents",
+          "requirement": "Defeat all story mode bosses",
+          "description": "Shiny golden versions of all rival characters"
+        }
+      ]
+    },
+    {
+      "category": "New Songs",
+      "items": [
+        {
+          "name": "Underground Beats",
+          "requirement": "Reach level 50",
+          "description": "Exclusive underground hip-hop tracks with unique visuals"
+        },
+        {
+          "name": "Remix Collection",
+          "requirement": "Complete 100 songs total",
+          "description": "Special remixed versions of classic tracks"
+        },
+        {
+          "name": "Hidden Gems",
+          "requirement": "Find all secret notes in story mode",
+          "description": "Rare songs hidden throughout the game world"
+        }
+      ]
+    },
+    {
+      "category": "Stage Backgrounds",
+      "items": [
+        {
+          "name": "Neon City",
+          "requirement": "Win 50 online battles",
+          "description": "Futuristic cityscape with animated neon lights"
+        },
+        {
+          "name": "Graffiti Alley",
+          "requirement": "Create 5 custom beat maps",
+          "description": "Street art themed background with dynamic elements"
+        },
+        {
+          "name": "Club Atmosphere",
+          "requirement": "Achieve maximum combo on any song",
+          "description": "High-energy club environment with strobe effects"
+        }
+      ]
+    },
+    {
+      "category": "Special Effects",
+      "items": [
+        {
+          "name": "Particle Explosions",
+          "requirement": "Score 1,000,000 points total",
+          "description": "Enhanced visual effects during perfect note hits"
+        },
+        {
+          "name": "Sound Wave Visualizer",
+          "requirement": "Unlock all character skins",
+          "description": "Real-time audio visualization during gameplay"
+        },
+        {
+          "name": "Custom Themes",
+          "requirement": "Complete all achievements",
+          "description": "Personalize the game interface with custom color schemes"
+        }
+      ]
+    }
+  ]
+}

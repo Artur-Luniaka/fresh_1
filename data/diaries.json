@@ -1,0 +1,40 @@
+{
+  "diaries": [
+    {
+      "title": "The Perfect Combo Challenge",
+      "author": "BeatMaster99",
+      "date": "April 15, 2025",
+      "story": "After months of practice, I finally achieved the impossible - a perfect combo on 'Tutorial' on Hard mode! The feeling was incredible. Every note hit perfectly, every beat in sync. It took me 47 attempts, but the satisfaction was worth every failure. My hands were shaking by the end, but I did it!",
+      "achievement": "Perfect Combo Master",
+      "difficulty": "Hard",
+      "backgroundImage": "public/funkin-section.jpg"
+    },
+    {
+      "title": "My First Tournament Victory",
+      "author": "FunkQueen",
+      "date": "April 12, 2025",
+      "story": "Joined my first online tournament and somehow made it to the finals! The competition was fierce, but I managed to pull through with my signature song 'Dad Battle'. The final round was against a player with 1000+ wins, but I stayed calm and focused on the rhythm. Won by just 2 points!",
+      "achievement": "Tournament Champion",
+      "difficulty": "Expert",
+      "backgroundImage": "public/funkin-section.jpg"
+    },
+    {
+      "title": "The 100 Song Marathon",
+      "author": "RhythmRider",
+      "date": "April 8, 2025",
+      "story": "Decided to challenge myself with a 100-song marathon. Started at 6 AM and didn't stop until I completed every song in the game. My eyes were blurry, my fingers were sore, but I felt like a true rhythm warrior. The variety of music kept me going - from chill beats to intense rap battles.",
+      "achievement": "Marathon Runner",
+      "difficulty": "Mixed",
+      "backgroundImage": "public/funkin-section.jpg"
+    },
+    {
+      "title": "Teaching My Little Brother",
+      "author": "StreetBeats",
+      "date": "April 5, 2025",
+      "story": "My 8-year-old brother wanted to learn how to play. Started him on 'Tutorial' on Easy mode, and he was hooked! Within a week, he was beating songs on Normal. The joy on his face when he got his first combo was priceless. Now we play together every weekend.",
+      "achievement": "Rhythm Teacher",
+      "difficulty": "Easy",
+      "backgroundImage": "public/funkin-section.jpg"
+    }
+  ]
+}

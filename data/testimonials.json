@@ -1,0 +1,34 @@
+{
+  "testimonials": [
+    {
+      "name": "BeatMaster99",
+      "comment": "This game is absolutely fire! The rhythm mechanics are smooth and the music selection is incredible. Been playing for months and still discovering new tracks.",
+      "rating": 5,
+      "achievement": "100+ Songs Completed"
+    },
+    {
+      "name": "FunkQueen",
+      "comment": "Finally found an unblocked version that works perfectly! The controls are responsive and the visual effects are stunning. Perfect for quick gaming sessions.",
+      "rating": 5,
+      "achievement": "Perfect Score on Hard Mode"
+    },
+    {
+      "name": "RhythmRider",
+      "comment": "As a music producer, I appreciate the attention to detail in the beat mapping. Each song feels unique and challenging. Great way to improve rhythm skills!",
+      "rating": 4,
+      "achievement": "50+ Perfect Combos"
+    },
+    {
+      "name": "StreetBeats",
+      "comment": "The urban aesthetic and street culture vibes are amazing. Love how each stage has its own personality. This game captures the essence of underground music perfectly.",
+      "rating": 5,
+      "achievement": "All Characters Unlocked"
+    },
+    {
+      "name": "GrooveMaster",
+      "comment": "Been playing rhythm games for years, and this one stands out. The difficulty progression is well-balanced, and the unlockable content keeps me coming back for more.",
+      "rating": 4,
+      "achievement": "Speed Runner Champion"
+    }
+  ]
+}
