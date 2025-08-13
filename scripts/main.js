@@ -443,6 +443,7 @@ async function loadPatchesData() {
                         
                         <!-- Overlay -->
                         <div class="patch-overlay">
+                            <button class="mobile-close-btn" aria-label="Close overlay">×</button>
                             <div class="overlay-content">
                                 <div class="overlay-highlights">
                                     <ul>
@@ -462,6 +463,9 @@ async function loadPatchesData() {
       });
 
       patchesContainer.innerHTML = patchesHtml;
+
+      // Initialize mobile overlay functionality
+      initializeMobilePatchOverlays();
     }
   } catch (error) {
     console.error("❌ Error loading patches data:", error);
@@ -574,6 +578,77 @@ function startRhythmPulse() {
 // Tally combo streak
 function tallyComboStreak() {
   return comboStreak;
+}
+
+// Initialize mobile patch overlay functionality
+function initializeMobilePatchOverlays() {
+  const patchCards = document.querySelectorAll(".patch-card");
+
+  patchCards.forEach((card) => {
+    // Check if device is mobile/touch
+    const isMobile = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+    if (isMobile) {
+      // Add touch event listeners for mobile
+      card.addEventListener("touchstart", function (e) {
+        // Prevent default to avoid conflicts with hover
+        e.preventDefault();
+      });
+
+      card.addEventListener("touchend", function (e) {
+        e.preventDefault();
+        toggleMobileOverlay(card);
+      });
+
+      // Add click event listener for mobile devices that support both touch and click
+      card.addEventListener("click", function (e) {
+        if (isMobile) {
+          e.preventDefault();
+          toggleMobileOverlay(card);
+        }
+      });
+
+      // Add event listeners for close button
+      const closeBtn = card.querySelector(".mobile-close-btn");
+      if (closeBtn) {
+        closeBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          hideMobileOverlay(card);
+        });
+      }
+    }
+  });
+}
+
+// Toggle mobile overlay visibility
+function toggleMobileOverlay(card) {
+  const isActive = card.classList.contains("mobile-overlay-active");
+
+  if (isActive) {
+    hideMobileOverlay(card);
+  } else {
+    showMobileOverlay(card);
+  }
+}
+
+// Show mobile overlay
+function showMobileOverlay(card) {
+  // Hide all other overlays first
+  document
+    .querySelectorAll(".patch-card.mobile-overlay-active")
+    .forEach((otherCard) => {
+      if (otherCard !== card) {
+        hideMobileOverlay(otherCard);
+      }
+    });
+
+  card.classList.add("mobile-overlay-active");
+}
+
+// Hide mobile overlay
+function hideMobileOverlay(card) {
+  card.classList.remove("mobile-overlay-active");
 }
 
 // Cleanup function

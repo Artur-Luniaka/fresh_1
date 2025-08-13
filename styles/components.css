@@ -1221,6 +1221,14 @@
   visibility: visible;
 }
 
+/* Disable hover effects on mobile devices */
+@media (hover: none) and (pointer: coarse) {
+  .patch-card:hover .patch-overlay {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .overlay-content {
   width: 100%;
   max-height: 100%;
@@ -1283,6 +1291,38 @@
     padding: 10px 14px;
     margin: 6px 0;
   }
+
+  /* Mobile overlay activation */
+  .patch-card.mobile-overlay-active .patch-overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Add close button for mobile */
+  .patch-overlay .mobile-close-btn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--funk-pink);
+    color: var(--beat-black);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 10;
+  }
+}
+
+/* Hide close button on desktop */
+.patch-overlay .mobile-close-btn {
+  display: none;
 }
 
 @media (max-width: 480px) {
@@ -1294,6 +1334,21 @@
     font-size: 12px;
     padding: 8px 12px;
     margin: 5px 0;
+  }
+
+  /* Ensure overlay is properly sized on very small screens */
+  .patch-overlay .overlay-content {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+  }
+
+  /* Make close button more accessible on small screens */
+  .patch-overlay .mobile-close-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
   }
 }
 
