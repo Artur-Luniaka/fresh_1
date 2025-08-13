@@ -218,7 +218,7 @@
 .funk-title {
   font-size: clamp(3rem, 8vw, 6rem);
   color: var(--funk-pink);
-  text-shadow: var(--funk-shadow);
+  text-shadow: 2px 2px 4px var(--shadow-black-80), 0 0 20px var(--funk-pink);
   margin-bottom: var(--groove-spacing-md);
 }
 
